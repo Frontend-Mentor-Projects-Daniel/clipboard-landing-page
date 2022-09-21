@@ -1,6 +1,26 @@
 /**--------------------- 
-** HORIZONTAL CENTERING
+**  CROPPING MEDIA
 ----------------------*/
+.frame {
+  --n: 16;
+  --d: 9;
+  aspect-ratio: var(--n) / var(--d);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame > img,
+.frame > video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+/**------------------------ 
+**  HORIZONTAL CENTERING
+-------------------------*/
 .center {
   box-sizing: content-box;
   margin-inline: auto;

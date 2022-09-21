@@ -53,7 +53,6 @@
 .hero__text-content h1,
 .hero__text-content p {
   max-width: 56ch;
-  text-align: center;
 }
 
 .buttons-wrapper {
@@ -67,5 +66,67 @@
 
   .buttons-wrapper {
     flex-direction: row;
+  }
+}
+
+/**------------------- 
+**     PRODUCT
+--------------------*/
+.product {
+  --gap: var(--space-2xl);
+  --measure: 75.75rem;
+}
+
+/*?------------------- 
+**  PRODUCT HEADER
+--------------------*/
+.product__header {
+  --gap: var(--space-s);
+
+  align-items: center;
+}
+
+.product__header h2 {
+  /* max-width: 19ch; */
+}
+
+.product__header p {
+  /* max-width: 30ch; */
+  max-width: 61ch;
+}
+
+/*?------------------- 
+**  PRODUCT INFO
+--------------------*/
+.product__info {
+  --gap: 3.5rem;
+}
+
+.product__image img {
+  inline-size: unset;
+  object-fit: contain;
+}
+
+.product__features {
+  --gap: var(--space-xl);
+}
+
+.product__features > * {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.product__features > * > * {
+  max-width: 38ch;
+}
+
+@media only screen and (min-width: 48em) {
+  .product__info {
+    flex-direction: row;
+  }
+
+  .product__features > * > * {
+    text-align: start;
   }
 }
