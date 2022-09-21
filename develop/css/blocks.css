@@ -86,12 +86,7 @@
   align-items: center;
 }
 
-.product__header h2 {
-  /* max-width: 19ch; */
-}
-
 .product__header p {
-  /* max-width: 30ch; */
   max-width: 61ch;
 }
 
@@ -113,6 +108,7 @@
 
 .product__features > * {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 0.625rem;
 }
