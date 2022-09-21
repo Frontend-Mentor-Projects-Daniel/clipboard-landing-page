@@ -70,11 +70,16 @@
 }
 
 /**------------------- 
-**     PRODUCT
+**    PRODUCTS
 --------------------*/
 .product {
   --gap: var(--space-2xl);
   --measure: 75.75rem;
+}
+
+.product p {
+  font-size: 1rem;
+  max-width: 34ch;
 }
 
 /*?------------------- 

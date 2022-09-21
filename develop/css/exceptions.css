@@ -1,3 +1,16 @@
 /**------------------- 
-**      RESET
+**    PRODUCTS
 --------------------*/
+@media only screen and (min-width: 48em) {
+  .product__features[data-direction='row'] {
+    flex-direction: row;
+  }
+
+  .product__features[data-direction='row'] > * {
+    align-items: center;
+  }
+
+  .product__features[data-direction='row'] > * > * {
+    text-align: center;
+  }
+}
