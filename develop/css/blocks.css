@@ -122,6 +122,10 @@
     flex-direction: row;
   }
 
+  .product__features > * {
+    align-items: flex-start;
+  }
+
   .product__features > * > * {
     text-align: start;
   }
