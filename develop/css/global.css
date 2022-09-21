@@ -1,0 +1,107 @@
+/* @link https://utopia.fyi/type/calculator?c=375,16,1.2,1440,18,1.2,5,2,768&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/space/calculator?c=375,16,1.2,1440,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6|7|7.4,s-l */
+
+:root {
+  /* COLOURS */
+  --clr-strong-cyan: 171, 66%, 44%;
+  --clr-light-blue: 233, 100%, 69%;
+  --clr-dark-grayish-blue: 210, 10%, 33%;
+  --clr-grayish-blue: 201, 11%, 66%;
+  --hsla: 1;
+
+  /* FONT FAMILY */
+  --ff-bai-jamjuree: 'Bai Jamjuree', sans-serif;
+
+  /* TYPE SCALE */
+  --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+  --step--1: clamp(0.83rem, calc(0.81rem + 0.1vw), 0.9rem);
+  --step-0: clamp(1rem, calc(0.96rem + 0.19vw), 1.13rem);
+  --step-1: clamp(1.2rem, calc(1.13rem + 0.31vw), 1.41rem);
+  --step-2: clamp(1.44rem, calc(1.33rem + 0.48vw), 1.76rem);
+  --step-3: clamp(1.73rem, calc(1.56rem + 0.71vw), 2.2rem);
+  --step-4: clamp(2rem, calc(1.7rem + 1.01vw), 2.75rem);
+  --step-5: clamp(2.49rem, calc(2.16rem + 1.42vw), 3.43rem);
+
+  /* FLUID SPACE SCALE */
+  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.09vw), 0.31rem);
+  --space-2xs: clamp(0.5rem, calc(0.48rem + 0.09vw), 0.56rem);
+  --space-xs: clamp(0.75rem, calc(0.71rem + 0.19vw), 0.88rem);
+  --space-s: clamp(1rem, calc(0.96rem + 0.19vw), 1.13rem);
+  --space-m: clamp(1.5rem, calc(1.43rem + 0.28vw), 1.69rem);
+  --space-l: clamp(2rem, calc(1.91rem + 0.38vw), 2.25rem);
+  --space-xl: clamp(3rem, calc(2.87rem + 0.56vw), 3.38rem);
+  --space-2xl: clamp(4rem, calc(3.82rem + 0.75vw), 4.5rem);
+  --space-3xl: clamp(6rem, calc(5.74rem + 1.13vw), 6.75rem);
+  --space-4xl: clamp(7rem, calc(6.69rem + 1.31vw), 7.88rem);
+  --space-5xl: clamp(7.38rem, calc(7.04rem + 1.41vw), 8.31rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, calc(0.14rem + 0.47vw), 0.56rem);
+  --space-2xs-xs: clamp(0.5rem, calc(0.37rem + 0.56vw), 0.88rem);
+  --space-xs-s: clamp(0.75rem, calc(0.62rem + 0.56vw), 1.13rem);
+  --space-s-m: clamp(1rem, calc(0.76rem + 1.03vw), 1.69rem);
+  --space-m-l: clamp(1.5rem, calc(1.24rem + 1.13vw), 2.25rem);
+  --space-l-xl: clamp(2rem, calc(1.52rem + 2.07vw), 3.38rem);
+  --space-xl-2xl: clamp(3rem, calc(2.47rem + 2.25vw), 4.5rem);
+  --space-2xl-3xl: clamp(4rem, calc(3.03rem + 4.13vw), 6.75rem);
+  --space-3xl-4xl: clamp(6rem, calc(5.34rem + 2.82vw), 7.88rem);
+  --space-4xl-5xl: clamp(7rem, calc(6.54rem + 1.97vw), 8.31rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1rem, calc(0.56rem + 1.88vw), 2.25rem);
+
+  /* FONT WEIGHT */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+}
+
+body {
+  /* --space is defined in compositions.css */
+  --space: var(--space-5xl);
+
+  font-family: var(--ff-bai-jamjuree);
+  font-size: var(--step-0);
+  font-weight: var(--fw-regular);
+}
+
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: var(--step-0);
+}
+
+button {
+  font-size: 1.125rem;
+}
+
+/**---------------------------------------------------------------------- 
+**                            COMPONENTS
+-----------------------------------------------------------------------*/
+/*&------------------- 
+**     BUTTONS
+--------------------*/
+.btn {
+  border: none;
+  border-radius: 1.75rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.5px;
+  padding: 1em 1.9em;
+
+  text-align: center;
+}
+
+.btn:hover {
+  --hsla: 0.25;
+}

@@ -1,0 +1,71 @@
+/**------------------- 
+**   BACKGROUND
+--------------------*/
+.bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -999;
+  height: 22.6875rem;
+
+  background-image: url('../assets/images/bg-header-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 48em) {
+  .bg-image {
+    background-image: url('../assets/images/bg-header-desktop.png');
+  }
+}
+
+/**------------------- 
+**      HEADER
+--------------------*/
+.header {
+  --measure: 45.625rem;
+  --space: var(--space-xl);
+
+  margin-top: var(--space-5xl);
+  position: relative;
+}
+
+/*?------------------- 
+**      LOGO
+--------------------*/
+.logo img {
+  margin: 0 auto;
+}
+
+/*?------------------- 
+**       HERO
+--------------------*/
+.hero {
+  --gap: 3rem;
+}
+
+.hero__text-content {
+  --gap: 1rem;
+}
+
+.hero__text-content h1,
+.hero__text-content p {
+  max-width: 56ch;
+  text-align: center;
+}
+
+.buttons-wrapper {
+  --gap: 1.5rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero {
+    align-items: center;
+  }
+
+  .buttons-wrapper {
+    flex-direction: row;
+  }
+}

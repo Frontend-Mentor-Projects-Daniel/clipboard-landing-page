@@ -1,0 +1,119 @@
+/**------------------- 
+**   BOX SHADOWS
+--------------------*/
+.bs-strong-cyan {
+  box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305),
+    inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+}
+
+/**------------------- 
+**     COLOURS
+--------------------*/
+/** background */
+.bg-strong-cyan {
+  background-color: hsl(var(--clr-strong-cyan), var(--hsla));
+}
+
+.bg-light-blue {
+  background-color: hsl(var(--clr-light-blue), var(--hsla));
+}
+
+.bg-dark-grayish-blue {
+  background-color: hsl(var(--clr-dark-grayish-blue));
+}
+
+.bg-grayish-blue {
+  background-color: hsl(var(--clr-grayish-blue));
+}
+
+/** text */
+.text-strong-cyan {
+  color: hsl(var(--clr-strong-cyan));
+}
+
+.text-light-blue {
+  color: hsl(var(--clr-light-blue));
+}
+
+.text-dark-grayish-blue {
+  color: hsl(var(--clr-dark-grayish-blue));
+}
+
+.text-grayish-blue {
+  color: hsl(var(--clr-grayish-blue));
+}
+
+/**------------------- 
+**     FLEX-BOX
+--------------------*/
+.flex-col {
+  --gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/**------------------- 
+**   FONT FAMILIES
+--------------------*/
+.ff-bai-jamjuree {
+  font-family: var(--ff-bai-jamjuree);
+}
+
+/**------------------- 
+**    FONT SIZES
+--------------------*/
+.fs-step--2 {
+  font-size: var(--step--2);
+}
+
+.fs-step--1 {
+  font-size: var(--step--1);
+}
+
+.fs-step-0 {
+  font-size: var(--step-0);
+}
+
+.fs-step-1 {
+  font-size: var(--step-1);
+}
+
+.fs-step-2 {
+  font-size: var(--step-2);
+}
+
+.fs-step-3 {
+  font-size: var(--step-3);
+}
+
+.fs-step-4 {
+  font-size: var(--step-4);
+}
+
+.fs-step-5 {
+  font-size: var(--step-5);
+}
+
+/**------------------- 
+**   FONT WEIGHTS
+--------------------*/
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+
+/**------------------- 
+**   LINE HEIGHT
+--------------------*/
+.lh-26 {
+  line-height: 1.625rem;
+}
+
+.lh-40 {
+  line-height: 2.5rem;
+}
