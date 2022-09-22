@@ -135,3 +135,16 @@
     text-align: start;
   }
 }
+
+/**------------------- 
+**    COMPANIES
+--------------------*/
+.companies {
+  --s1: 3.5rem;
+  --threshold: 48rem;
+  --measure: 69.375rem;
+}
+
+.companies img {
+  margin: 0 auto;
+}
