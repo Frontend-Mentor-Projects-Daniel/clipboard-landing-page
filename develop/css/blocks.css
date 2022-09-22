@@ -35,7 +35,7 @@
 /*?------------------- 
 **      LOGO
 --------------------*/
-.logo img {
+.header .logo img {
   margin: 0 auto;
 }
 
@@ -147,4 +147,104 @@
 
 .companies img {
   margin: 0 auto;
+}
+
+/**------------------- 
+**     FOOTER
+--------------------*/
+.background {
+  background-color: hsl(var(--clr-grayish-blue), 0.1);
+  width: 100%;
+  max-width: 90rem;
+}
+
+.footer {
+  --gap: 3.125rem;
+  --measure: 90rem;
+
+  align-items: center;
+
+  /* background-color: hsl(var(--clr-grayish-blue), 0.1); */
+  font-size: 3.4375rem;
+
+  padding: 3rem;
+}
+
+/*?------------------- 
+**      LOGO
+--------------------*/
+.footer .logo {
+  height: 1em;
+  margin: 0 auto;
+  width: 1em;
+}
+
+/*?------------------- 
+**    NAVIGATION
+--------------------*/
+.footer .bottom-navigation {
+  font-size: 1.125rem;
+}
+
+.footer .bottom-navigation ul {
+  --gap: var(--step-5);
+
+  align-items: center;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.footer .bottom-navigation a {
+  color: hsl(var(--clr-dark-grayish-blue));
+  text-decoration: none;
+}
+
+.footer .bottom-navigation a:hover {
+  color: hsl(var(--clr-strong-cyan));
+}
+
+/*?--------------------- 
+** SOCIAL MEDIA ICONS
+----------------------*/
+.footer .social-media-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+
+  font-size: 1.5rem;
+}
+
+.footer .social-media-icons svg {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+}
+
+.footer .social-media-icon svg:hover path {
+  fill: hsl(var(--clr-strong-cyan));
+}
+
+@media only screen and (min-width: 48em) {
+  .background {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer .logo {
+    margin: 0;
+  }
+
+  .footer .bottom-navigation ul {
+    flex-direction: row;
+  }
+
+  .footer .social-media-icons {
+    flex-direction: row;
+  }
 }
