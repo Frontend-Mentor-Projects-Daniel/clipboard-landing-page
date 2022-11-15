@@ -17,8 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Frontend-Mentor-Projects-Daniel/clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://stalwart-bavarois-15c13b.netlify.app/)
+You can find the live version of the site [here](https://stalwart-bavarois-15c13b.netlify.app/).
 
 ## My process
 
